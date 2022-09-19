@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
-public class DecreaseButton : MonoBehaviour
+public class DecreaseButton2 : MonoBehaviour
 {
     public GameObject keypadOBButton;
     public GameObject keypadTextButton;
@@ -14,7 +13,6 @@ public class DecreaseButton : MonoBehaviour
 
     int keypadInput;
     public bool inReach;
-    bool checkIfPressed;
     int passingText;
 
 
@@ -45,7 +43,6 @@ public class DecreaseButton : MonoBehaviour
                 Debug.Log("TEst");
                 keypadTextButton.SetActive(false);
                 gameObject.GetComponent<BoxCollider>().enabled = false;
-                GetComponent<OpenKeyPad>().enabled = false;
 
             }
 
@@ -67,9 +64,9 @@ public class DecreaseButton : MonoBehaviour
 
         }
     }
-    public void PassingKeypadInputTwo(int textInput)
+    public void PassingKeypadInputTwo2(int textInput)
     {
-        keypadInput = textInput+1;
+        keypadInput = textInput + 1;
     }
 
 
@@ -77,9 +74,9 @@ public class DecreaseButton : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact") && inReach)
         {
-            
-              FindObjectOfType<IncreaseButton>().PassingKeypadInput(passingText);
-            
+
+            FindObjectOfType<IncreaseButton2>().PassingKeypadInput2(passingText);
+
             if (keypadInput >= 0 && keypadInput <= 24)
             {
                 keypadInput--;
@@ -101,11 +98,5 @@ public class DecreaseButton : MonoBehaviour
 
 
     }
- 
-
-
-
-
-
 }
 

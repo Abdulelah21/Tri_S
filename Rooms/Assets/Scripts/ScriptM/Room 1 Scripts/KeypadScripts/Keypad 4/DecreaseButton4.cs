@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class IncreaseButton : MonoBehaviour
+public class DecreaseButton4 : MonoBehaviour
 {
     public GameObject keypadOBButton;
     public GameObject keypadTextButton;
@@ -11,11 +11,10 @@ public class IncreaseButton : MonoBehaviour
     [SerializeField] TextMeshProUGUI keypadText;
     public AudioSource pressButton;
 
+
     int keypadInput;
     public bool inReach;
-    bool checkIfPressed;
     int passingText;
-
 
 
 
@@ -23,8 +22,9 @@ public class IncreaseButton : MonoBehaviour
     {
         keypadInput = 0;
         inReach = false;
-        keypadText.text = keypadInput+"";
+        keypadText.text = keypadInput + "";
         passingText = 0;
+
 
     }
 
@@ -44,7 +44,6 @@ public class IncreaseButton : MonoBehaviour
                 Debug.Log("TEst");
                 keypadTextButton.SetActive(false);
                 gameObject.GetComponent<BoxCollider>().enabled = false;
-                GetComponent<OpenKeyPad>().enabled = false;
 
             }
 
@@ -66,30 +65,30 @@ public class IncreaseButton : MonoBehaviour
 
         }
     }
-
-    public void PassingKeypadInput(int textInput)
+    public void PassingKeypadInputTwo4(int textInput)
     {
-        keypadInput = textInput-1;
+        keypadInput = textInput + 1;
     }
+
 
     void Update()
     {
         if (Input.GetButtonDown("Interact") && inReach)
         {
 
-            FindObjectOfType<DecreaseButton>().PassingKeypadInputTwo(passingText);
+            FindObjectOfType<IncreaseButton4>().PassingKeypadInput4(passingText);
 
             if (keypadInput >= 0 && keypadInput <= 24)
             {
-                keypadInput++;
+                keypadInput--;
                 passingText = keypadInput;
                 keypadText.text = keypadInput + "";
                 pressButton.Play();
 
             }
-            if (keypadInput >= 25)
+            if (keypadInput < 0)
             {
-                keypadInput = 0;
+                keypadInput = 24;
                 passingText = keypadInput;
                 keypadText.text = keypadInput + "";
 
@@ -101,5 +100,9 @@ public class IncreaseButton : MonoBehaviour
 
     }
 
-  
+
+
+
+
+
 }
