@@ -1180,6 +1180,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSController 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2797659287597930523, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
+      propertyPath: m_JumpSpeed
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ba9e9659b8e24741bd6bb49ac546549, type: 3}
 --- !u!1 &468284282
