@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class IncreaseButton : MonoBehaviour
+public class DecreaseButton : MonoBehaviour
 {
     public GameObject keypadOBButton;
     public GameObject keypadTextButton;
     public Animator door;
     [SerializeField] TextMeshProUGUI keypadText;
     public AudioSource pressButton;
+
 
     int keypadInput;
     public bool inReach;
@@ -18,13 +19,13 @@ public class IncreaseButton : MonoBehaviour
 
 
 
-
     void Start()
     {
         keypadInput = 0;
         inReach = false;
-        keypadText.text = keypadInput+"";
+        keypadText.text = keypadInput + "";
         passingText = 0;
+
 
     }
 
@@ -66,30 +67,30 @@ public class IncreaseButton : MonoBehaviour
 
         }
     }
-
-    public void PassingKeypadInput(int textInput)
+    public void PassingKeypadInputTwo(int textInput)
     {
-        keypadInput = textInput-1;
+        keypadInput = textInput+1;
     }
+
 
     void Update()
     {
         if (Input.GetButtonDown("Interact") && inReach)
         {
-
-            FindObjectOfType<DecreaseButton>().PassingKeypadInputTwo(passingText);
-
+            
+              FindObjectOfType<IncreaseButton>().PassingKeypadInput(passingText);
+            
             if (keypadInput >= 0 && keypadInput <= 24)
             {
-                keypadInput++;
+                keypadInput--;
                 passingText = keypadInput;
                 keypadText.text = keypadInput + "";
                 pressButton.Play();
 
             }
-            if (keypadInput >= 25)
+            if (keypadInput < 0)
             {
-                keypadInput = 0;
+                keypadInput = 24;
                 passingText = keypadInput;
                 keypadText.text = keypadInput + "";
 
@@ -100,6 +101,11 @@ public class IncreaseButton : MonoBehaviour
 
 
     }
+ 
 
-  
+
+
+
+
 }
+

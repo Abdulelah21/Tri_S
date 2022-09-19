@@ -1228,6 +1228,12 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 5271eb6c9db23b345a016497786eec4b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ba9e9659b8e24741bd6bb49ac546549, type: 3}
+--- !u!1 &458256911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8318518301047874246, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+    type: 3}
+  m_PrefabInstance: {fileID: 458256910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &468284282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,6 +1674,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03910202, y: 0.022652032, z: 0.02}
   m_Center: {x: -0.009552915, y: -0.0000025574125, z: 2.2822045e-19}
+--- !u!114 &567144575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567144570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c0d7c5f3e2a8c43829d3a8bf127dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keypadOBButton: {fileID: 567144570}
+  keypadTextButton: {fileID: 458256911}
+  door: {fileID: 96221536}
+  keypadText: {fileID: 892368583}
+  pressButton: {fileID: 1951830071}
+  inReach: 0
 --- !u!1001 &570466265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5880,17 +5904,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.094533145
+      value: 0.06104534
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.094533145
+      value: 0.06104534
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.094533145
+      value: 0.06104534
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
         type: 3}
@@ -5900,12 +5924,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.763
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.719696
+      value: 19.871
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
         type: 3}
@@ -5942,6 +5966,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7497865645620877381, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.1447716
+      objectReference: {fileID: 0}
+    - target: {fileID: -7497865645620877381, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 75.04556
+      objectReference: {fileID: 0}
+    - target: {fileID: -7497865645620877381, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 75.04556
+      objectReference: {fileID: 0}
+    - target: {fileID: -7497865645620877381, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.04
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
         type: 3}
       propertyPath: m_Name
@@ -5951,6 +5995,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229009999974404599, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.1447716
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229009999974404599, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 75.04556
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229009999974404599, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 75.04556
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229009999974404599, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 8912049515002365231, guid: 0ca7e42a2e469af4a8d9e5abd1982928,
         type: 3}
@@ -5982,8 +6046,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.031075547, y: 0.030161565, z: 0.019999998}
-  m_Center: {x: -0.0055379984, y: 0.00019598115, z: -0.000000007078193}
+  m_Size: {x: 0.0559182, y: 0.048229534, z: 0.02}
+  m_Center: {x: -0.017959327, y: -0.00079103623, z: -0.0000000067684782}
 --- !u!1001 &1925680985
 PrefabInstance:
   m_ObjectHideFlags: 0
