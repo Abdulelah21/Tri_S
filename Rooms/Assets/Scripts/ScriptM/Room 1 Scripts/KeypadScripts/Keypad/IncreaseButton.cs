@@ -71,6 +71,8 @@ public class IncreaseButton : MonoBehaviour
         keypadInput = textInput-1;
     }
 
+   
+
     void Update()
     {
         if (Input.GetButtonDown("Interact") && inReach)
@@ -99,6 +101,9 @@ public class IncreaseButton : MonoBehaviour
 
 
     }
+    public int SetKeyInput()
+    {
+        return keypadInput;
+    }
 
-  
 }

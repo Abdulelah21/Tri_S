@@ -71,6 +71,7 @@ public class DecreaseButton : MonoBehaviour
     }
 
 
+
     void Update()
     {
         if (Input.GetButtonDown("Interact") && inReach)
@@ -99,10 +100,11 @@ public class DecreaseButton : MonoBehaviour
 
 
     }
- 
 
-
-
+    public int SetKeypadInput_2()
+    {
+        return keypadInput;
+    }
 
 
 }

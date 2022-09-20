@@ -99,7 +99,10 @@ public class IncreaseButton4 : MonoBehaviour
 
 
     }
-
+    public int SetKeypadInput4()
+    {
+        return keypadInput;
+    }
 
 }
 

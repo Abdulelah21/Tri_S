@@ -98,4 +98,10 @@ public class DecreaseButton3 : MonoBehaviour
 
 
     }
+
+    public int SetKeypadInput3_2()
+    {
+        return keypadInput;
+    }
+
 }
