@@ -125,7 +125,7 @@ public class ActivateKeypad : MonoBehaviour
 
 
 
-        if (Input.GetButtonDown("Interact") && inReach && waitAfterPress < Time.time)
+        if (Input.GetButtonDown("Interact") && inReach && checkingIfFinished)
         {
             StartCoroutine(WaitButtonWhenPressed());
             if ( ( (answerOne == keypadAnswer) || (answerOne_2 == keypadAnswer)  ) && 
@@ -191,7 +191,7 @@ public class ActivateKeypad : MonoBehaviour
         //Print the time of when the function is first called.
         Debug.Log("Started Coroutine at timestamp : " + Time.time);
         checkingIfFinished = false;
-
+        activeOBButton.GetComponent<BoxCollider>().isTrigger = false;
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(waitTime);
 
@@ -199,6 +199,8 @@ public class ActivateKeypad : MonoBehaviour
         //After we have waited 5 seconds print the time again.
         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
         checkingIfFinished = true;
+        activeOBButton.GetComponent<BoxCollider>().isTrigger = true;
+
 
     }
 
