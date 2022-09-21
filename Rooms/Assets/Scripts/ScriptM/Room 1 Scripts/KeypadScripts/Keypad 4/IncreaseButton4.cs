@@ -73,12 +73,11 @@ public class IncreaseButton4 : MonoBehaviour
 
     void Update()
     {
+        keypadInput = FindObjectOfType<DecreaseButton4>().SetKeypadInput4_2();
+
         if (Input.GetButtonDown("Interact") && inReach)
         {
-
-            FindObjectOfType<DecreaseButton4>().PassingKeypadInputTwo4(passingText);
-
-            if (keypadInput >= 0 && keypadInput <= 24)
+           if (keypadInput >= 0 && keypadInput <= 24)
             {
                 keypadInput++;
                 passingText = keypadInput;
