@@ -14,7 +14,7 @@ public class DecreaseButton2 : MonoBehaviour
     int keypadInput;
     public bool inReach;
     int passingText;
-
+    bool getAnswer;
 
 
     void Start()
@@ -33,7 +33,7 @@ public class DecreaseButton2 : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == "Reach" && getAnswer)
         {
 
             inReach = true;
@@ -73,8 +73,9 @@ public class DecreaseButton2 : MonoBehaviour
     void Update()
     {
         keypadInput = FindObjectOfType<IncreaseButton2>().SetKeypadInput2();
+        getAnswer = FindObjectOfType<ActivateKeypad>().AnswerIsTrue();
 
-        if (Input.GetButtonDown("Interact") && inReach)
+        if (Input.GetButtonDown("Interact") && inReach && getAnswer)
         {
             if (keypadInput >= 0 && keypadInput <= 24)
             {

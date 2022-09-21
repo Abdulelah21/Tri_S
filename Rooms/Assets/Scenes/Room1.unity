@@ -10229,7 +10229,7 @@ MonoBehaviour:
   activeOBButton: {fileID: 2511426865912085951}
   inReach: 0
   door: {fileID: 0}
-  button: {fileID: 0}
+  button: {fileID: 2511426865912085954}
   correct: {fileID: 2036613776}
   wrong: {fileID: 1657875734}
 --- !u!65 &2511426865912085953
@@ -10245,6 +10245,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.019999998, y: 0.020000001, z: 0.020000013}
   m_Center: {x: -0.000000029802322, y: 0.00000011920929, z: 0.0000009536743}
+--- !u!95 &2511426865912085954
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2511426865912085951}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f2cca9fe2c84b8f4a80340ac6050d236, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &2968197941374729873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 858860557889979183, guid: 86d85ae248f1d9c43933da264787db83,

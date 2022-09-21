@@ -81,12 +81,6 @@ public class ActivateKeypad : MonoBehaviour
             {
 
                 inReach = true;
-                if (door.GetBool("OpenDoor"))
-                {
-                    Debug.Log("TEst");
-                    gameObject.GetComponent<BoxCollider>().enabled = false;
-
-                }
 
 
 
@@ -125,7 +119,7 @@ public class ActivateKeypad : MonoBehaviour
 
 
 
-        if (Input.GetButtonDown("Interact") && inReach && checkingIfFinished)
+        if (Input.GetButtonDown("Interact") && inReach && checkingIfFinished && allowdToTrigger)
         {
             StartCoroutine(WaitButtonWhenPressed());
             if ( ( (answerOne == keypadAnswer) || (answerOne_2 == keypadAnswer)  ) && 
@@ -135,6 +129,7 @@ public class ActivateKeypad : MonoBehaviour
             {
 
                 correct.Play();
+                allowdToTrigger = false;
             }
             else
             {
@@ -192,9 +187,12 @@ public class ActivateKeypad : MonoBehaviour
         Debug.Log("Started Coroutine at timestamp : " + Time.time);
         checkingIfFinished = false;
         activeOBButton.GetComponent<BoxCollider>().isTrigger = false;
+        PushButton();
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(waitTime);
 
+        Pullbutton();
+        yield return new WaitForSeconds(1);
 
         //After we have waited 5 seconds print the time again.
         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
@@ -202,6 +200,24 @@ public class ActivateKeypad : MonoBehaviour
         activeOBButton.GetComponent<BoxCollider>().isTrigger = true;
 
 
+    }
+
+    void PushButton()
+    {
+        button.SetBool("Push", true);
+        button.SetBool("Pull", false);
+        
+    }
+
+    void Pullbutton()
+    {
+        button.SetBool("Push", false);
+        button.SetBool("Pull", true);
+    }
+
+    public bool AnswerIsTrue()
+    {
+        return allowdToTrigger;
     }
 
 }
