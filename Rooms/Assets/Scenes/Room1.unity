@@ -10228,7 +10228,7 @@ MonoBehaviour:
   waitTime: 5
   activeOBButton: {fileID: 2511426865912085951}
   inReach: 0
-  door: {fileID: 0}
+  door: {fileID: 96221536}
   button: {fileID: 2511426865912085954}
   correct: {fileID: 2036613776}
   wrong: {fileID: 1657875734}

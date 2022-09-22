@@ -127,7 +127,7 @@ public class ActivateKeypad : MonoBehaviour
                 ( (answerThree == keypadAnswer3) || (answerThree_2 == keypadAnswer3) ) && 
                 ( (answerFour == keypadAnswer4) || (answerFour_2 == keypadAnswer4) ) ) 
             {
-
+                DoorOpen();
                 correct.Play();
                 allowdToTrigger = false;
             }
@@ -213,6 +213,20 @@ public class ActivateKeypad : MonoBehaviour
     {
         button.SetBool("Push", false);
         button.SetBool("Pull", true);
+    }
+
+    void DoorOpen()
+    {
+        door.SetBool("OpenDoor",true);
+        door.SetBool("CloseDoor", false);
+
+    }
+
+    void DoorClose()
+    {
+        door.SetBool("OpenDoor", false);
+        door.SetBool("CloseDoor", true);
+
     }
 
     public bool AnswerIsTrue()
