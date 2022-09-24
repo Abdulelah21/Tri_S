@@ -12,6 +12,7 @@ public class ActivateKeypad : MonoBehaviour
     [SerializeField] TextMeshProUGUI keypadText2;
     [SerializeField] TextMeshProUGUI keypadText3;
     [SerializeField] TextMeshProUGUI keypadText4;
+    [SerializeField] TextMeshProUGUI keypad4Answer;
 
     public Light lt1;
     public Light lt1_2;
@@ -50,7 +51,7 @@ public class ActivateKeypad : MonoBehaviour
 
     /*    public IncreaseButton4 keypad4_1;
         public DecreaseButton4 keypad4_2;*/
-    int keypadAnswer4 = 11;
+    int keypadAnswer4;
     int answerFour;
     int answerFour_2;
 
@@ -60,16 +61,20 @@ public class ActivateKeypad : MonoBehaviour
 
     public Animator door;
     public Animator button;
+    public Animator chest;
 
 
     public AudioSource correct;
     public AudioSource wrong;
-
+    public AudioSource wrong2;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        int x = Random.Range(1, 24);
+        keypadAnswer4 = x;
+        keypad4Answer.text = keypadAnswer4+"";
+        Debug.Log(keypadAnswer4);
     }
 
 
@@ -122,7 +127,16 @@ public class ActivateKeypad : MonoBehaviour
         if (Input.GetButtonDown("Interact") && inReach && checkingIfFinished && allowdToTrigger)
         {
             StartCoroutine(WaitButtonWhenPressed());
-            if ( ( (answerOne == keypadAnswer) || (answerOne_2 == keypadAnswer)  ) && 
+            if (((answerOne == keypadAnswer) || (answerOne_2 == keypadAnswer)) &&
+                ((answerTwo == keypadAnswer2) || (answerTwo_2 == keypadAnswer2)) &&
+                ((answerThree == keypadAnswer3) || (answerThree_2 == keypadAnswer3)) &&
+                ((answerFour != keypadAnswer4) || (answerFour_2 != keypadAnswer4)))
+            {
+                ChestOpen();
+                wrong2.Play();
+            }
+
+           else if ( ( (answerOne == keypadAnswer) || (answerOne_2 == keypadAnswer)  ) && 
                 ( (answerTwo == keypadAnswer2) || (answerTwo_2 == keypadAnswer2) ) &&
                 ( (answerThree == keypadAnswer3) || (answerThree_2 == keypadAnswer3) ) && 
                 ( (answerFour == keypadAnswer4) || (answerFour_2 == keypadAnswer4) ) ) 
@@ -227,6 +241,11 @@ public class ActivateKeypad : MonoBehaviour
         door.SetBool("OpenDoor", false);
         door.SetBool("CloseDoor", true);
 
+    }
+
+    void ChestOpen()
+    {
+        chest.SetBool("OpenChest",true);
     }
 
     public bool AnswerIsTrue()
