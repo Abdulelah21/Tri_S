@@ -9,6 +9,7 @@ public class NoteAppear : MonoBehaviour
     [SerializeField] private Image _noteImage;
     public bool inReach;
     [SerializeField] private GameObject fpController;
+    public GameObject noteTextShow;
 
     // Start is called before the first frame update
 
@@ -20,6 +21,7 @@ public class NoteAppear : MonoBehaviour
         {
 
             inReach = true;
+            noteTextShow.SetActive(true);
 
 
 
@@ -36,6 +38,8 @@ public class NoteAppear : MonoBehaviour
         if (other.gameObject.tag == "Reach")
         {
             inReach = false;
+            noteTextShow.SetActive(false);
+
 
         }
     }

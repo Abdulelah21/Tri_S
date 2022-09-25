@@ -657,10 +657,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keypadOBButton: {fileID: 97050216}
-  keypadTextButton: {fileID: 504617169}
+  keypadTextButton: {fileID: 937865633}
   door: {fileID: 96221536}
   keypadText: {fileID: 1001553265}
-  pressButton: {fileID: 1951830071}
+  pressButton: {fileID: 2797659288571719223}
   inReach: 0
 --- !u!1001 &107697205
 PrefabInstance:
@@ -947,10 +947,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keypadOBButton: {fileID: 121572639}
-  keypadTextButton: {fileID: 504617169}
+  keypadTextButton: {fileID: 937865633}
   door: {fileID: 96221536}
   keypadText: {fileID: 1059857882}
-  pressButton: {fileID: 1951830071}
+  pressButton: {fileID: 2797659288571719223}
   inReach: 0
 --- !u!114 &136663327
 MonoBehaviour:
@@ -965,10 +965,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keypadOBButton: {fileID: 97050215}
-  keypadTextButton: {fileID: 458256911}
+  keypadTextButton: {fileID: 781401177}
   door: {fileID: 96221536}
   keypadText: {fileID: 1001553265}
-  pressButton: {fileID: 1951830071}
+  pressButton: {fileID: 2797659288571719223}
   inReach: 0
 --- !u!1 &154301827
 GameObject:
@@ -1244,7 +1244,6 @@ GameObject:
   - component: {fileID: 201146251}
   - component: {fileID: 201146250}
   - component: {fileID: 201146254}
-  - component: {fileID: 201146255}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1260,7 +1259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201146248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.42, y: -0.83, z: -6.6775}
+  m_LocalPosition: {x: 3.42, y: -0.274, z: -10.238}
   m_LocalScale: {x: 0.035680804, y: 0.06572818, z: 0.039921317}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1358,24 +1357,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _noteImage: {fileID: 648320893}
   inReach: 0
---- !u!143 &201146255
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201146248}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2.2204459e-16
-  m_Radius: 5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  fpController: {fileID: 2797659287938457589}
+  noteTextShow: {fileID: 729844318}
 --- !u!1001 &207489270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2264,6 +2247,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 170967346618896240, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2026322659482754626, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2781347511253795620, guid: 6ba9e9659b8e24741bd6bb49ac546549,
         type: 3}
       propertyPath: m_RootOrder
@@ -2279,10 +2272,25 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2797659287299185609, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
+      propertyPath: m_Text
+      value: +
+      objectReference: {fileID: 0}
     - target: {fileID: 2797659287299185615, guid: 6ba9e9659b8e24741bd6bb49ac546549,
         type: 3}
       propertyPath: m_Name
       value: Increase
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797659287299185615, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797659287584257051, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.054
       objectReference: {fileID: 0}
     - target: {fileID: 2797659287591268827, guid: 6ba9e9659b8e24741bd6bb49ac546549,
         type: 3}
@@ -2361,9 +2369,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2797659288107225865, guid: 6ba9e9659b8e24741bd6bb49ac546549,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.212
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797659288107225865, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: b7d6228a755994b4ebbd9d4ae3c3bc4d, type: 3}
+    - target: {fileID: 2797659288150499280, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797659288712199027, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.457
+      objectReference: {fileID: 0}
     - target: {fileID: 2797659288712199027, guid: 6ba9e9659b8e24741bd6bb49ac546549,
         type: 3}
       propertyPath: m_audioClip
@@ -2371,17 +2394,21 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: d66140ffed1e3c84c8d5069fbe97d976, type: 3}
     - target: {fileID: 2797659288988015673, guid: 6ba9e9659b8e24741bd6bb49ac546549,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.212
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797659288988015673, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 5271eb6c9db23b345a016497786eec4b, type: 3}
+    - target: {fileID: 8340820515313474063, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ba9e9659b8e24741bd6bb49ac546549, type: 3}
---- !u!1 &458256911 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8318518301047874246, guid: 6ba9e9659b8e24741bd6bb49ac546549,
-    type: 3}
-  m_PrefabInstance: {fileID: 458256910}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &468284282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,18 +2441,6 @@ Transform:
   m_Father: {fileID: 1881422577}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &504617169 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2797659287299185615, guid: 6ba9e9659b8e24741bd6bb49ac546549,
-    type: 3}
-  m_PrefabInstance: {fileID: 458256910}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &505399108 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2797659288443424439, guid: 6ba9e9659b8e24741bd6bb49ac546549,
-    type: 3}
-  m_PrefabInstance: {fileID: 458256910}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &515916620
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,10 +3098,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keypadOBButton: {fileID: 567144570}
-  keypadTextButton: {fileID: 458256911}
+  keypadTextButton: {fileID: 781401177}
   door: {fileID: 96221536}
   keypadText: {fileID: 892368583}
-  pressButton: {fileID: 1951830071}
+  pressButton: {fileID: 2797659288571719223}
   inReach: 0
 --- !u!1001 &570466265
 PrefabInstance:
@@ -3503,7 +3518,7 @@ GameObject:
   - component: {fileID: 648320894}
   - component: {fileID: 648320893}
   m_Layer: 5
-  m_Name: Image
+  m_Name: mYImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3934,10 +3949,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keypadOBButton: {fileID: 703707304}
-  keypadTextButton: {fileID: 504617169}
+  keypadTextButton: {fileID: 937865633}
   door: {fileID: 96221536}
   keypadText: {fileID: 892368583}
-  pressButton: {fileID: 1951830071}
+  pressButton: {fileID: 2797659288571719223}
   inReach: 0
 --- !u!1001 &721336580
 PrefabInstance:
@@ -4130,6 +4145,12 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &729844318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 170967346618896240, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+    type: 3}
+  m_PrefabInstance: {fileID: 458256910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &739390739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4219,6 +4240,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8862022661681389515, guid: 7a897a6b060173d41a37261351d86569,
     type: 3}
   m_PrefabInstance: {fileID: 739390739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &781401177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8340820515313474063, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+    type: 3}
+  m_PrefabInstance: {fileID: 458256910}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &781428633
 PrefabInstance:
@@ -4430,10 +4457,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keypadOBButton: {fileID: 781428637}
-  keypadTextButton: {fileID: 504617169}
+  keypadTextButton: {fileID: 937865633}
   door: {fileID: 96221536}
   keypadText: {fileID: 811643886}
-  pressButton: {fileID: 1951830071}
+  pressButton: {fileID: 2797659288571719223}
   inReach: 0
 --- !u!1001 &781632437
 PrefabInstance:
@@ -5879,6 +5906,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 926912563}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &937865633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2026322659482754626, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+    type: 3}
+  m_PrefabInstance: {fileID: 458256910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &942110453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6684,10 +6717,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keypadOBButton: {fileID: 121572638}
-  keypadTextButton: {fileID: 458256911}
+  keypadTextButton: {fileID: 781401177}
   door: {fileID: 96221536}
   keypadText: {fileID: 1059857882}
-  pressButton: {fileID: 1951830071}
+  pressButton: {fileID: 2797659288571719223}
   inReach: 0
 --- !u!1 &1082437875
 GameObject:
@@ -7733,10 +7766,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keypadOBButton: {fileID: 781428636}
-  keypadTextButton: {fileID: 458256911}
+  keypadTextButton: {fileID: 781401177}
   door: {fileID: 96221536}
   keypadText: {fileID: 811643886}
-  pressButton: {fileID: 1951830071}
+  pressButton: {fileID: 2797659288571719223}
   inReach: 0
 --- !u!1 &1313733937
 GameObject:
@@ -8582,7 +8615,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 505399108}
+  m_Father: {fileID: 2797659288027167929}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1402761093
@@ -8597,7 +8630,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: caefb563daecb0749928385932b5502c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.212
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9627,12 +9660,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4822225659741460126, guid: 336374783a6a6f9438803704ebba706f,
     type: 3}
   m_PrefabInstance: {fileID: 1613155934}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1657875734 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2797659288107225865, guid: 6ba9e9659b8e24741bd6bb49ac546549,
-    type: 3}
-  m_PrefabInstance: {fileID: 458256910}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1659958388
 PrefabInstance:
@@ -11375,12 +11402,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1944808779}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1951830071 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2797659288988015673, guid: 6ba9e9659b8e24741bd6bb49ac546549,
-    type: 3}
-  m_PrefabInstance: {fileID: 458256910}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1984142200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11729,12 +11750,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1369345722980405988, guid: d46fa1eeedbcb0e41b8c735b2594b434,
     type: 3}
   m_PrefabInstance: {fileID: 2019440055}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &2036613776 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2797659288712199027, guid: 6ba9e9659b8e24741bd6bb49ac546549,
-    type: 3}
-  m_PrefabInstance: {fileID: 458256910}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2047709662
 GameObject:
@@ -12685,13 +12700,21 @@ MonoBehaviour:
   lt4: {fileID: 2003045544}
   lt4_2: {fileID: 2003045543}
   waitTime: 5
+  i1button: {fileID: 703707304}
+  i2button: {fileID: 97050216}
+  i3button: {fileID: 781428637}
+  i4button: {fileID: 121572639}
+  d1button: {fileID: 567144570}
+  d2button: {fileID: 97050215}
+  d3button: {fileID: 781428636}
+  d4button: {fileID: 121572638}
   activeOBButton: {fileID: 2511426865912085951}
   inReach: 0
   door: {fileID: 96221536}
   button: {fileID: 2511426865912085954}
   chest: {fileID: 1663298946}
-  correct: {fileID: 2036613776}
-  wrong: {fileID: 1657875734}
+  correct: {fileID: 2797659288826497405}
+  wrong: {fileID: 2797659288496267527}
   wrong2: {fileID: 1402761093}
 --- !u!65 &2511426865912085953
 BoxCollider:
@@ -12726,6 +12749,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &2797659287938457589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2797659287591366139, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+    type: 3}
+  m_PrefabInstance: {fileID: 458256910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2797659288027167929 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2797659288443424439, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+    type: 3}
+  m_PrefabInstance: {fileID: 458256910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2797659288496267527 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2797659288107225865, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+    type: 3}
+  m_PrefabInstance: {fileID: 458256910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2797659288571719223 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2797659288988015673, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+    type: 3}
+  m_PrefabInstance: {fileID: 458256910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2797659288826497405 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2797659288712199027, guid: 6ba9e9659b8e24741bd6bb49ac546549,
+    type: 3}
+  m_PrefabInstance: {fileID: 458256910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2968197941374729873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 858860557889979183, guid: 86d85ae248f1d9c43933da264787db83,

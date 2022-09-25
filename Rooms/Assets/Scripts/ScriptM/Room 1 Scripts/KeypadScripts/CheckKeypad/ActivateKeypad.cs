@@ -29,6 +29,17 @@ public class ActivateKeypad : MonoBehaviour
     public float waitTime = 5.0f;
 
 
+    [SerializeField] private GameObject i1button;
+    [SerializeField] private GameObject i2button;
+    [SerializeField] private GameObject i3button;
+    [SerializeField] private GameObject i4button;
+
+    [SerializeField] private GameObject d1button;
+    [SerializeField] private GameObject d2button;
+    [SerializeField] private GameObject d3button;
+    [SerializeField] private GameObject d4button;
+
+
     /*    public IncreaseButton keypad1_1;
         public DecreaseButton keypad1_2;*/
     int keypadAnswer = 13;
@@ -158,6 +169,8 @@ public class ActivateKeypad : MonoBehaviour
             {
                 lt1.color = Color.green;
                 lt1_2.color = Color.green;
+                i1button.GetComponent<BoxCollider>().enabled = false;
+                d1button.GetComponent<BoxCollider>().enabled = false;
             }
 
             if ((answerTwo != keypadAnswer2) || (answerTwo_2 != keypadAnswer2))
@@ -169,6 +182,8 @@ public class ActivateKeypad : MonoBehaviour
             {
                 lt2.color = Color.green;
                 lt2_2.color = Color.green;
+                i2button.GetComponent<BoxCollider>().enabled = false;
+                d2button.GetComponent<BoxCollider>().enabled = false;
             }
 
             if ((answerThree != keypadAnswer3) || (answerThree_2 != keypadAnswer3))
@@ -180,6 +195,8 @@ public class ActivateKeypad : MonoBehaviour
             {
                 lt3.color = Color.green;
                 lt3_2.color = Color.green;
+                i3button.GetComponent<BoxCollider>().enabled = false;
+                d3button.GetComponent<BoxCollider>().enabled = false;
             }
 
             if ((answerFour != keypadAnswer4) || (answerFour_2 != keypadAnswer4)) {
@@ -190,6 +207,8 @@ public class ActivateKeypad : MonoBehaviour
             {
                 lt4.color = Color.green;
                 lt4_2.color = Color.green;
+                i4button.GetComponent<BoxCollider>().enabled = false;
+                d4button.GetComponent<BoxCollider>().enabled = false;
             }
 
         }
@@ -251,5 +270,24 @@ public class ActivateKeypad : MonoBehaviour
     {
         return allowdToTrigger;
     }
+
+    public int GetAnswer1()
+    {
+        return keypadAnswer;
+    }
+
+    public int GetAnswer2()
+    {
+        return keypadAnswer2;
+    }
+    public int GetAnswer3()
+    {
+        return keypadAnswer3;
+    }
+    public int GetAnswer4()
+    {
+        return keypadAnswer4;
+    }
+
 
 }
