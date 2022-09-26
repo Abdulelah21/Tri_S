@@ -27,7 +27,6 @@ public class ActivateKeypad : MonoBehaviour
     bool checkingIfFinished = true;
     private bool allowdToTrigger = true;
     public float waitTime = 5.0f;
-    private float waitAfterPress = 0.0f;
 
 
     /*    public IncreaseButton keypad1_1;
