@@ -42,7 +42,7 @@ public class ActivateKeypad : MonoBehaviour
 
     /*    public IncreaseButton keypad1_1;
         public DecreaseButton keypad1_2;*/
-    int keypadAnswer = 13;
+    int keypadAnswer = 10;
     int answerOne;
     int answerOne_2;
 /*    public IncreaseButton2 keypad2_1;
