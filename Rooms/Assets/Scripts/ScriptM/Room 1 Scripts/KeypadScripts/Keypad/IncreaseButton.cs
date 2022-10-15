@@ -37,14 +37,7 @@ public class IncreaseButton : MonoBehaviour
 
             inReach = true;
             keypadTextButton.SetActive(true);
-            if (door.GetBool("OpenDoor"))
-            {
-                Debug.Log("TEst");
-                keypadTextButton.SetActive(false);
-                gameObject.GetComponent<BoxCollider>().enabled = false;
-/*                GetComponent<OpenKeyPad>().enabled = false;
-*/
-            }
+   
 
 
 

@@ -8,6 +8,7 @@ TagManager:
   - EnemyOne
   - PatrolPoint
   - MonsterHear
+  - FlashLight
   layers:
   - Default
   - TransparentFX
