@@ -7,6 +7,6 @@ public class LoadNextScene : MonoBehaviour
 {
      void OnEnable()
     {
-        SceneManager.LoadScene("Room1", LoadSceneMode.Single);
+        SceneManager.LoadScene("GameplayIntro", LoadSceneMode.Single);
     }
 }
