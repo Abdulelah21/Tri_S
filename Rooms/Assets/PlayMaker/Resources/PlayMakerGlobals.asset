@@ -44,3 +44,4 @@ MonoBehaviour:
   - StopSoundEffect
   - Slowly
   - PlaySoundEffectSlowly
+  - FlashLight
