@@ -14,8 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   variables:
     floatVariables: []
-    intVariables: []
-    boolVariables: []
+    intVariables:
+    - useVariable: 1
+      name: saved
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    boolVariables:
+    - useVariable: 1
+      name: Maz1Saved
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     stringVariables: []
     vector2Variables: []
     vector3Variables:
@@ -25,10 +37,56 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: {x: 0, y: 0, z: 0}
+    - useVariable: 1
+      name: playerPos
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 4.5, y: 0.73, z: 7.5}
+    - useVariable: 1
+      name: MonsterPos
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {x: -35.53, y: 0.57, z: -6.92}
+    - useVariable: 1
+      name: playerPOS
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {x: -46.8, y: 0.73, z: -27.9}
     colorVariables: []
     rectVariables: []
     quaternionVariables: []
-    gameObjectVariables: []
+    gameObjectVariables:
+    - useVariable: 1
+      name: StartMaz
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 5691929764629431770, guid: 8f9589eed768cdd4a8cbb989c1b7e7b8,
+        type: 3}
+    - useVariable: 1
+      name: ScaryThings
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 6127226188685417632, guid: 59c1f5ea884cd024b9bc088869b30a05,
+        type: 3}
+    - useVariable: 1
+      name: ScaryThings3
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 6904378040361573994, guid: 9ca2bdd96cfc23d4593d9b9dce349249,
+        type: 3}
+    - useVariable: 1
+      name: Invent
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 6578641566833625685, guid: 3e12fc8aa11eb014d95f7d85aa101716,
+        type: 3}
     objectVariables: []
     materialVariables: []
     textureVariables: []
@@ -36,7 +94,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - CanSeePlyaer
   - next
@@ -45,3 +103,6 @@ MonoBehaviour:
   - Slowly
   - PlaySoundEffectSlowly
   - FlashLight
+  - START
+  - PauseGame
+  - UnpauseGame
