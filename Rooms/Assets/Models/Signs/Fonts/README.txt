@@ -1,23 +1,21 @@
-Orbitron Variable Font
-======================
+El Messiri Variable Font
+========================
 
-This download contains Orbitron as both a variable font and static fonts.
+This download contains El Messiri as both a variable font and static fonts.
 
-Orbitron is a variable font with this axis:
+El Messiri is a variable font with this axis:
   wght
 
 This means all the styles are contained in a single file:
-  Orbitron-VariableFont_wght.ttf
+  ElMessiri-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Orbitron:
-  static/Orbitron-Regular.ttf
-  static/Orbitron-Medium.ttf
-  static/Orbitron-SemiBold.ttf
-  static/Orbitron-Bold.ttf
-  static/Orbitron-ExtraBold.ttf
-  static/Orbitron-Black.ttf
+in those cases you can use the static font files for El Messiri:
+  static/ElMessiri-Regular.ttf
+  static/ElMessiri-Medium.ttf
+  static/ElMessiri-SemiBold.ttf
+  static/ElMessiri-Bold.ttf
 
 Get started
 -----------
