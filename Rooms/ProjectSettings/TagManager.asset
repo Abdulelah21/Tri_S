@@ -10,6 +10,9 @@ TagManager:
   - MonsterHear
   - FlashLight
   - ground
+  - Snake
+  - Points
+  - Reach2
   layers:
   - Default
   - TransparentFX
