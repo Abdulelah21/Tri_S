@@ -27,6 +27,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: DeathCounter
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     boolVariables:
     - useVariable: 1
       name: Maz1Saved
@@ -60,7 +66,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: 4.5, y: 0.73, z: 7.5}
+      value: {x: 37.3, y: 0.734, z: 34.4}
     - useVariable: 1
       name: MonsterPos
       tooltip: 
@@ -72,7 +78,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: -46.8, y: 0.73, z: -27.9}
+      value: {x: 37.3, y: 0.734, z: 34.4}
     colorVariables: []
     rectVariables: []
     quaternionVariables: []
@@ -119,7 +125,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - CanSeePlyaer
   - next

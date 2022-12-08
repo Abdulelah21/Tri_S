@@ -18337,6 +18337,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.PlayerPrefsLoadVariable
         - HutongGames.PlayMaker.Actions.PlayerPrefsLoadVariable
         - HutongGames.PlayMaker.Actions.PlayerPrefsLoadVariable
+        - HutongGames.PlayMaker.Actions.PlayerPrefsLoadVariable
         - HutongGames.PlayMaker.Actions.LoadScene
         - HutongGames.PlayMaker.Actions.SetProperty
         customNames:
@@ -18352,10 +18353,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101010101010101
-        actionIsOpen: 010101010101010101010101
-        actionStartIndex: 00000000020000000400000006000000080000000a0000000c0000000e0000001000000012000000140000001b000000
-        actionHashCodes: 5ac852046998e5016998e5016998e5016998e5016998e5016998e5016998e5016998e5016998e50120a9b1005ac85204
+        - 
+        actionEnabled: 01010101010101010101010101
+        actionIsOpen: 01010101010101010101010101
+        actionStartIndex: 00000000020000000400000006000000080000000a0000000c0000000e000000100000001200000014000000160000001d000000
+        actionHashCodes: 5ac852046998e5016998e5016998e5016998e5016998e5016998e5016998e5016998e5016998e5016998e50120a9b1005ac85204
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -18653,6 +18655,12 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: 13
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 223
         - useVariable: 0
           name: 
@@ -18700,7 +18708,7 @@ MonoBehaviour:
           intValue: 0
           boolValue: 0
           stringValue: 
-          vector4Value: {x: 4.5, y: 0.73, z: 7.5, w: 0}
+          vector4Value: {x: 37.3, y: 0.734, z: 34.4, w: 0}
           objectReference: {fileID: 0}
           arrayValue:
             useVariable: 0
@@ -18749,6 +18757,30 @@ MonoBehaviour:
           boolValue: 0
           stringValue: 
           vector4Value: {x: -35.53, y: 0.57, z: -6.92, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: DeathCounter
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
           objectReference: {fileID: 0}
           arrayValue:
             useVariable: 0
@@ -18950,10 +18982,12 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 24000000010000001200000027000000120000002700000012000000270000001200000027000000120000002700000012000000270000001200000027000000120000002700000012000000270000000700000012000000100000002a0000001100000017000000170000002400000001000000
+        paramDataType: 240000000100000012000000270000001200000027000000120000002700000012000000270000001200000027000000120000002700000012000000270000001200000027000000120000002700000012000000270000000700000012000000100000002a0000001100000017000000170000002400000001000000
         paramName:
         - targetProperty
         - everyFrame
+        - key
+        - variable
         - key
         - variable
         - key
@@ -18981,8 +19015,8 @@ MonoBehaviour:
         - failureEvent
         - targetProperty
         - everyFrame
-        paramDataPos: 0000000000000000000000000000000001000000010000000200000002000000030000000300000004000000040000000500000005000000060000000600000007000000070000000800000008000000010000000900000000000000000000000000000000000000010000000100000005000000
-        paramByteDataSize: 0000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 00000000000000000000000000000000010000000100000002000000020000000300000003000000040000000400000005000000050000000600000006000000070000000700000008000000080000000900000009000000010000000a00000000000000000000000000000000000000010000000100000005000000
+        paramByteDataSize: 00000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000001000000
     events:
     - name: AppearLineUnderText
       isSystemEvent: 0
