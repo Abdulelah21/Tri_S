@@ -500,7 +500,7 @@ Transform:
   - {fileID: 1234782588}
   - {fileID: 1945910345}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &18047297
 GameObject:
@@ -681,7 +681,7 @@ Transform:
   - {fileID: 1482109541}
   - {fileID: 1797533846}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &21496016
 GameObject:
@@ -6442,7 +6442,7 @@ Transform:
   - {fileID: 1995595700}
   - {fileID: 698169672}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!95 &211529682
 Animator:
@@ -11084,7 +11084,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0.584, y: -89.51, z: -89.995}
 --- !u!23 &441403863
 MeshRenderer:
@@ -13020,7 +13020,7 @@ Transform:
   - {fileID: 182314554}
   - {fileID: 1512089033}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &556625187
 GameObject:
@@ -14160,7 +14160,7 @@ Transform:
   m_Children:
   - {fileID: 587462362}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &598603779
 PrefabInstance:
@@ -14693,7 +14693,7 @@ Transform:
   - {fileID: 1196294533}
   - {fileID: 1294624554}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &634091951
 PrefabInstance:
@@ -14809,7 +14809,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0.584, y: -89.51, z: -89.995}
 --- !u!23 &635082434
 MeshRenderer:
@@ -21207,7 +21207,7 @@ Transform:
   - {fileID: 994186323}
   - {fileID: 115838973}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &982185914
 GameObject:
@@ -23261,7 +23261,7 @@ Transform:
   - {fileID: 431545200}
   - {fileID: 381171882}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1063513397
 PrefabInstance:
@@ -30221,13 +30221,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.PlayerPrefsLoadVariable
+        - HutongGames.PlayMaker.Actions.PlayerPrefsLoadVariable
         - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: a4c8bf00
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000200000004000000
+        actionHashCodes: 6998e5016998e501a4c8bf00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -30237,9 +30241,69 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmObjectParams: []
-        fsmVarParams: []
+        fsmVarParams:
+        - variableName: InRoom1
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 2
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: Maz1Saved
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 2
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
@@ -30257,21 +30321,25 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - next
+        - next 2
         - next 2
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 11000000170000001700000001000000
+        paramDataType: 1200000027000000120000002700000011000000170000001700000001000000
         paramName:
+        - key
+        - variable
+        - key
+        - variable
         - boolVariable
         - isTrue
         - isFalse
         - everyFrame
-        paramDataPos: 00000000000000000100000000000000
-        paramByteDataSize: 00000000000000000000000001000000
+        paramDataPos: 0000000000000000010000000100000000000000000000000100000000000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000001000000
     - name: State 4
       description: 
       colorIndex: 0
@@ -30614,7 +30682,7 @@ MonoBehaviour:
           value: Loading
         fsmObjectParams: []
         fsmVarParams:
-        - variableName: playerPos
+        - variableName: playerPOS
           objectType: UnityEngine.Object
           useVariable: 1
           type: 6
@@ -30622,7 +30690,7 @@ MonoBehaviour:
           intValue: 0
           boolValue: 0
           stringValue: 
-          vector4Value: {x: 37.3, y: 0.734, z: 34.4, w: 0}
+          vector4Value: {x: 25, y: -130.2228, z: -42.68, w: 0}
           objectReference: {fileID: 0}
           arrayValue:
             useVariable: 0
@@ -31271,7 +31339,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 17d4cb6d06d1f574fa40e903f013f1b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 17d4cb6d06d1f574fa40e903f013f1b5,
         type: 3}
@@ -31963,7 +32031,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1283000026
 GameObject:
@@ -33052,7 +33120,7 @@ Transform:
   - {fileID: 145127941}
   - {fileID: 1123661026}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1351669521
 PrefabInstance:
@@ -33208,7 +33276,7 @@ Transform:
   - {fileID: 214012859}
   - {fileID: 2113463529}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1359063570
 PrefabInstance:
@@ -40237,7 +40305,7 @@ Transform:
   - {fileID: 1485206920}
   - {fileID: 1089863891}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1768473891
 PrefabInstance:
@@ -41283,7 +41351,7 @@ Transform:
   - {fileID: 644422891}
   - {fileID: 1872127695}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1801762545
 GameObject:
@@ -43145,7 +43213,7 @@ Transform:
   - {fileID: 126802142}
   - {fileID: 148847516}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1862080375
 GameObject:
@@ -47303,7 +47371,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2040224082
 GameObject:
@@ -49306,7 +49374,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 177.329, z: 0}
 --- !u!1 &750876974286102807
 GameObject:
@@ -49560,7 +49628,7 @@ Transform:
   - {fileID: 394535657}
   - {fileID: 1666595313}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2382721530747005525
 MeshFilter:
@@ -49940,7 +50008,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0.584, y: -89.51, z: -89.995}
 --- !u!23 &4529431923820717764
 MeshRenderer:
