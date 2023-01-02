@@ -96,7 +96,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: -35.53, y: 0.57, z: -6.92}
+      value: {x: 136.6178, y: -130.5968, z: 17.78611}
     - useVariable: 1
       name: playerPOS
       tooltip: 
