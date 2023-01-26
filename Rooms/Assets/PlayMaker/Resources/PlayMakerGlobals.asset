@@ -102,7 +102,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: 25, y: -130.2228, z: -42.68}
+      value: {x: 149.52, y: -130.1, z: 43.54}
     colorVariables: []
     rectVariables: []
     quaternionVariables: []
@@ -161,3 +161,5 @@ MonoBehaviour:
   - START
   - PauseGame
   - UnpauseGame
+  - Idle
+  - RespawnLights

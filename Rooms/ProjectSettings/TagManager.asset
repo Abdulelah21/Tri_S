@@ -13,6 +13,7 @@ TagManager:
   - Snake
   - Points
   - Reach2
+  - PadLock
   layers:
   - Default
   - TransparentFX
