@@ -102,7 +102,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: 149.52, y: -130.1, z: 43.54}
+      value: {x: 101.9318, y: -130.1, z: 4.586105}
     colorVariables: []
     rectVariables: []
     quaternionVariables: []
